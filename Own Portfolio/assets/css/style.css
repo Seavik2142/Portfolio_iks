@@ -415,18 +415,52 @@ main {
 .social-list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   padding-bottom: 4px;
   padding-left: 7px;
+  margin-top: 8px;
+}
+
+.social-item {
+  flex: 0 0 auto;
 }
 
 .social-item .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   color: var(--light-gray-70);
   font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all var(--transition-1);
+  position: relative;
 }
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link ion-icon {
+  font-size: 20px;
+}
+
+.social-label {
+  font-size: 14px;
+  font-weight: var(--fw-500);
+  display: none;
+}
+
+.social-item .social-link:hover,
+.social-item .social-link:focus {
+  color: var(--orange-yellow-crayola);
+  background: var(--jet);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.3);
+}
+
+.social-item .social-link:active {
+  transform: translateY(0);
+}
 
 
 /*-----------------------------------*\
@@ -1207,6 +1241,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media (min-width: 450px) {
 
   /**
+   * SOCIAL MEDIA - Mobile Optimization
+   */
+
+  .social-label { display: inline-block; }
+
+  .social-list { gap: 8px; }
+
+  /**
    * client
    */
    /* Adjusted for better display consistency on horizontal scroll */
@@ -1524,6 +1566,19 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 30px 15px;
   }
 
+  .social-list {
+    gap: 10px;
+  }
+
+  .social-item .social-link {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+  .social-label {
+    font-size: 13px;
+  }
+
 
   /**
    * NAVBAR
@@ -1814,7 +1869,21 @@ textarea.form-input::-webkit-resizer { display: none; }
     opacity: 0;
   }
 
-  .social-list { justify-content: center; }
+  .social-list { 
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-label { display: none; }
+
+  .social-item .social-link {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .social-item .social-link ion-icon {
+    font-size: 24px;
+  }
 
 
   /**
