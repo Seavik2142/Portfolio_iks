@@ -22,7 +22,7 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -147,7 +147,28 @@
             </a>
           </li>
 
+          <li class="social-item">
+            <a href="https://github.com/Seavik2142" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+              <ion-icon name="logo-github"></ion-icon>
+              <span class="social-label">GitHub</span>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mao-seavik-003a0a372" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <span class="social-label">LinkedIn</span>
+            </a>
+          </li>
+
         </ul>
+
+        <div class="separator"></div>
+
+        <button class="print-cv-btn" id="print-cv-btn">
+          <ion-icon name="print-outline"></ion-icon>
+          <span>Print A4 CV PDF</span>
+        </button>
 
       </div>
 
@@ -210,8 +231,9 @@
         </header>
 
         <section class="about-text">
-          <p>
-            University student currently seeking an internship to gain practical work experience while continuing my studies.
+          <p id="about-me-text">
+            University student currently seeking an internship to gain practical work experience while continuing my studies,
+            with Python being my primary programming language for my study and development.
             I have studied Java, Python (Flask, PyTorch), JavaScript (React), HTML5, CSS3, Oracle, MongoDB, PostgreSQL,
             and I have a strong foundation in AI/ML engineering, data analysis, and Flutter (Dart). Proficient in building intelligent applications using
             machine learning models and AI frameworks. I am eager to apply my academic knowledge to real projects and grow in a collaborative team environment.
@@ -542,7 +564,7 @@
 
               <span>2024 — Now</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" id="edu-norton-desc">
                 Quality and Rigor: The university is known for its strict rules and rigorous examination process, which
                 students often cite as a positive factor that motivates them to study hard and ensures the quality of
                 the degree
@@ -556,7 +578,7 @@
 
               <span>2025-2026</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" id="edu-salait-desc">
                 This is a place where I study web development to enhance my development skills.
               </p>
 
@@ -568,7 +590,7 @@
 
               <span>2020-2023</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" id="edu-highschool-desc">
                 I graduated from high school in 2023. During my time in high school, I developed a strong foundation
                 in various subjects and actively participated in extracurricular activities.
               </p>
@@ -597,7 +619,7 @@
 
               <span>2024 — Future</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" id="exp-webdev-desc">
                 Web developer responsible for managing front-end and back-end development tasks, ensuring seamless user experience.
               </p>
 
@@ -609,7 +631,7 @@
 
               <span>2024 — Now</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" id="exp-ml-desc">
                 Machine Learning enthusiast actively studying and applying ML techniques to enhance web development skills.
               </p>
 
@@ -621,7 +643,7 @@
 
               <span>2024 — 2025</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" id="exp-webdesign-desc">
                 Designed visually appealing and user-friendly website layouts, collaborating with clients to meet their design needs.
               </p>
 
@@ -1195,6 +1217,68 @@
 
 
 
+
+  <!-- Print Editor Modal -->
+  <div class="print-modal" id="print-modal">
+    <div class="print-modal-content">
+      <h3 class="print-modal-title">Customize CV before Printing</h3>
+      
+      <div class="print-modal-body">
+        <div id="modal-pages-container">
+          <div class="modal-page-section" data-page-index="0">
+            <div class="page-section-header">
+              <h4 class="form-section-title">Custom Page 1</h4>
+            </div>
+            
+            <div class="form-group">
+              <label>About Me / Summary</label>
+              <textarea class="modal-input-about" rows="4"></textarea>
+            </div>
+
+            <h5 class="form-subsection-title">Experience Descriptions</h5>
+            <div class="form-group">
+              <label>Web Developer</label>
+              <textarea class="modal-input-webdev" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Machine Learning</label>
+              <textarea class="modal-input-ml" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Web Designer</label>
+              <textarea class="modal-input-webdesign" rows="2"></textarea>
+            </div>
+
+            <h5 class="form-subsection-title">Education Descriptions</h5>
+            <div class="form-group">
+              <label>Norton University of Cambodia</label>
+              <textarea class="modal-input-norton" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Sala IT</label>
+              <textarea class="modal-input-salait" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+              <label>High School</label>
+              <textarea class="modal-input-highschool" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="print-modal-footer">
+        <div class="footer-left">
+          <button class="modal-btn clear-btn" id="modal-clear-btn" type="button">Clear Fields</button>
+          <button class="modal-btn load-btn" id="modal-load-btn" type="button">Load Page Text</button>
+          <button class="modal-btn add-page-btn" id="modal-add-page-btn" type="button">+ Add Page</button>
+        </div>
+        <div class="footer-right">
+          <button class="modal-btn cancel-btn" id="modal-cancel-btn" type="button">Cancel</button>
+          <button class="modal-btn confirm-btn" id="modal-confirm-btn" type="button">Confirm & Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--
     - custom js link

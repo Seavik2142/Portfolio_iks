@@ -1,6 +1,6 @@
 # 🚀 My Professional Portfolio
 
-Hello and welcome! I'm Mao Seavik, a university student studying software development and looking for an internship to gain practical work experience. My current skills include Java, Python (Flask, PyTorch), JavaScript (React), HTML5, CSS3, Oracle, MongoDB, PostgreSQL, and basic UX/UI, data analysis, and Flutter (Dart).
+Hello and welcome! I'm Mao Seavik, a university student studying software development and looking for an internship to gain practical work experience, with Python being my primary programming language for my study and development. My current skills include Java, Python (Flask, PyTorch), JavaScript (React), HTML5, CSS3, Oracle, MongoDB, PostgreSQL, and basic UX/UI, data analysis, and Flutter (Dart).
 
 ---
 
@@ -10,7 +10,8 @@ Hello and welcome! I'm Mao Seavik, a university student studying software develo
 | :--- | :--- | :--- |
 | **🌐 Live Portfolio Site** | The best way to view my work and read about my background. | **[Link to your live portfolio website]** |
 | **📧 Contact Me** | Directly reach out for collaboration or opportunities. | Ahzarky@gmail.com |
-| **🔗 LinkedIn Profile** | Connect with me professionally. | https://www.linkedin.com/in/mao-seavik-003a0a372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app|
+| **🔗 LinkedIn Profile** | Connect with me professionally. | https://www.linkedin.com/in/mao-seavik-003a0a372 |
+| **🐙 GitHub Profile** | Check out my repositories and code. | https://github.com/Seavik2142 |
 
 ---
 ---
@@ -42,5 +43,6 @@ This is an overview of my core competencies.
 I am currently open to new opportunities and collaborations on challenging projects. If you are looking for a Fullstack Web developer who is committed to quality, performance, and user experience, please don't hesitate to reach out.
 
 **Email:** [ahzarky@gmail.com]
-**LinkedIn:** [https://www.linkedin.com/in/mao-seavik-003a0a372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appe]
+**LinkedIn:** [https://www.linkedin.com/in/mao-seavik-003a0a372]
+**GitHub:** [https://github.com/Seavik2142]
 **Website:** [https://website-sell-seven.vercel.app/]
