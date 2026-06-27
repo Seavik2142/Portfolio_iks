@@ -8,7 +8,8 @@ Hello and welcome! I'm Mao Seavik, a university student studying software develo
 
 | Category | Description | Link |
 | :--- | :--- | :--- |
-| **🌐 Live Portfolio Site** | The best way to view my work and read about my background. | **[Link to your live portfolio website]** |
+| **🌐 Live Portfolio Site** | The best way to view my work and read about my background. | [Vercel Portfolio](https://portfolio-iks.vercel.app/) |
+| **📄 PDF Resume** | Beautifully designed professional resume. | [CV.pdf](CV.pdf) |
 | **📧 Contact Me** | Directly reach out for collaboration or opportunities. | Ahzarky@gmail.com |
 | **🔗 LinkedIn Profile** | Connect with me professionally. | https://www.linkedin.com/in/mao-seavik-003a0a372 |
 | **🐙 GitHub Profile** | Check out my repositories and code. | https://github.com/Seavik2142 |
